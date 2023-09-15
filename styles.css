@@ -1,3 +1,5 @@
+/* Estilos para telas maiores (desktop) */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -14,7 +16,6 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px;
-    position: relative;
 }
 
 .header img {
@@ -22,19 +23,17 @@ body {
     height: auto;
     width: 100%;
     max-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .column {
-    width: 50%; /* Manter as colunas com 50% da largura em telas grandes */
+    width: calc(50% - 20px);
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Estilos para caixas em telas maiores */
 .box {
     width: 150px;
     height: 150px;
@@ -51,7 +50,7 @@ body {
     justify-content: center;
 }
 
-/* Estilos para o link dentro do círculo */
+/* Estilos para links dentro das caixas */
 .box a {
     text-decoration: none;
     color: #333333;
@@ -64,7 +63,27 @@ p {
 
 /* Media query para dispositivos com largura menor que 768px (telas de celular) */
 @media (max-width: 768px) {
+    /* Estilos para telas menores (celulares) */
+
     .column {
-        width: 100%; /* Altera para 100% de largura em telas pequenas */
+        width: 100%; /* Ocupar toda a largura em telas pequenas */
+        margin: 10px 0; /* Adicionar margem superior e inferior para separar as colunas */
+    }
+
+    /* Altera a ordem das colunas ímpares para manter dois de um lado e dois do outro */
+    .column:nth-child(odd) {
+        order: 1; /* Define a ordem como 1 (primeiro) */
+    }
+
+    /* Altera a ordem das colunas pares */
+    .column:nth-child(even) {
+        order: 2; /* Define a ordem como 2 (segundo) */
+    }
+
+    /* Estilos para caixas em telas menores */
+    .box {
+        width: 100%; /* Ocupar toda a largura das colunas */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        margin-top: 20px; /* Adicionar mais espaço entre as caixas */
     }
 }
