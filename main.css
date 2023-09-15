@@ -1,0 +1,45 @@
+/* Seu CSS anterior */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .custom-input {
+    width: 50px;
+  }
+  
+  .equacao-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  h1.mb-4 {
+    text-align: center;
+  }
+  
+  .mb-3 {
+    text-align: center;
+  }
+  
+  .form-control.custom-input {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .equacao {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }

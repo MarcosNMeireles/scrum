@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Concentração</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-chtml.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Concentração</h1>
+
+    $$C \cdot V = C1 \cdot (V1 - V2) + C2 \cdot V2$$
+
+    <form class="formulario">
+      <div class="mb-3">
+        <label for="c" class="form-label">C (Concentração final desejada):</label>
+        <input type="number" class="form-control custom-input" id="c" name="c">
+      </div>
+
+      <div class="mb-3">
+        <label for="v" class="form-label">V (Volume final desejado - mL):</label>
+        <input type="number" class="form-control custom-input" id="v" name="v">
+      </div>
+
+      <div class="mb-3">
+        <label for="c1" class="form-label">C1 (Concentração da primeira solução):</label>
+        <input type="number" class="form-control custom-input" id="c1" name="c1">
+      </div>
+
+      <div class="mb-3">
+        <label for="v1" class="form-label">V1 (Volume da primeira solução - mL):</label>
+        <input type="number" class="form-control custom-input" id="v1" name="v1">
+      </div>
+
+      <div class="mb-3">
+        <label for="c2" class="form-label">C2 (Concentração da segunda solução):</label>
+        <input type="number" class="form-control custom-input" id="c2" name="c2">
+      </div>
+      <button type="button" class="btn btn-success" id="calcularButton">Calcular</button>
+      <button type="button" class="btn btn-warning" id="limparButton">Limpar Campos</button>
+      <a href="index.html" class="btn btn-info">
+        INICIO
+      </a>
+    </form>
+
+    <div class="equacao">
+      <br />
+      <div id="mathjax-container"></div>
+      <br />
+      <div id="mathjax-container1"></div>
+      <br />
+      <div id="mathjax-container2"></div>
+      <br />
+      <div id="mathjax-container3"></div>
+      <br />
+      <div id="mathjax-container4"></div>
+      <br />
+    </div>
+
+    <!-- Adicione um elemento "resultado" para exibir o resultado -->
+    <div id="resultado"></div>
+
+  </div>
+
+  <!-- Adicione o link para o arquivo Bootstrap JS e o arquivo jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="style.js"></script> <!-- Mova o script JavaScript para o final do corpo do documento -->
+</body>
+
+</html>

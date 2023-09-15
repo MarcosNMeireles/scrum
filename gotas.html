@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Gotejamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-chtml.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <h1 class="text-center">Gotejamento</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">Para tempo em Horas</th>
+        <th class="text-center">Para tempo em Minutos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center">
+          $$ \text{gotas} = \frac{\text{volume}}{\text{tempo} \times 3} $$
+        </td>
+        <td class="text-center">
+          $$ \text{gotas} = \frac{\text{volume}\times 20}{\text{tempo}} $$
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="container mt-5">
+    <form id="numero-form">
+      <div class="form-group">
+        <label for="volume">Volume (ml):</label>
+        <input type="number" class="form-control" id="volume" name="volume" oninput="checkInputs()" />
+      </div>
+
+      <div class="form-group">
+        <label for="tempo">Tempo:</label>
+        <input type="number" class="form-control" id="tempo" name="tempo" oninput="checkInputs()" />
+      </div>
+
+      <select id="unidadeTempo" onchange="checkInputs()">
+        <option value="minutos">Minutos</option>
+        <option value="horas">Horas</option>
+      </select>
+      <br /><br />
+
+      <div class="form-group">
+        <label for="gotas">Gotas:</label>
+        <input type="number" class="form-control" id="gotas" name="gotas" oninput="checkInputs()" />
+      </div>
+
+      <button type="button" class="btn btn-success" onclick="calcular()">
+        Calcular
+      </button>
+
+      <button type="button" class="btn btn-warning" onclick="limparPagina()">
+        Limpar
+      </button>
+
+      <a href="index.html" class="btn btn-info">
+        INICIO
+      </a>
+
+    </form>
+
+    <div id="resultado" style="display: none;">
+      <br />
+      <br />
+      <div id="mathjax-container"></div>
+      <br />
+      <div id="mathjax-container4"></div>
+      <br />
+      <div id="mathjax-container2"></div>
+      <br />
+      <div id="mathjax-container3"></div>
+      <br />
+      <div id="mensagem"></div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

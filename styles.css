@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    max-width: 90%;
+    height: auto;
+}
+
+.column {
+    width: calc(50% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #f7f7f723;
+    border: 1px solid #cccccc;
+    border-radius: 50%; /* Define um raio de 50% para criar um círculo */
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.7; /* Adicione a propriedade de opacidade aqui (0.8 é um exemplo, você pode ajustar conforme necessário) */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos para o link dentro do círculo */
+.box a {
+    text-decoration: none;
+    color: #333333;
+}
+
+p {
+    margin: 10px 0;
+    padding: 0;
+}
