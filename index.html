@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header img {
+            max-width: 90%;
+            height: auto;
+        }
+
+        .column {
+            width: calc(50% - 20px);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #f7f7f723;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 10px;
+            opacity: 0.7; /* Adicione a propriedade de opacidade aqui (0.8 é um exemplo, você pode ajustar conforme necessário) */
+        }
+
+        img {
+            max-width: 70%;
+            height: auto;
+            
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.pinimg.com/originals/52/3b/58/523b586c436a41640d28875220d20b19.jpg" alt="Imagem de topo">
+    </div>
+    <div class="column">
+        <div class="box">
+            <a href="pagina1.html">
+                <img src="https://i.pinimg.com/564x/ef/d9/ac/efd9acc7091708270304aebfc07dec63.jpg" alt="Ícone 1">
+                <p>Concentração</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="pagina2.html">
+                <img src="https://i.pinimg.com/564x/8e/9d/11/8e9d11a5e876e418d55db7dea4030ef4.jpg" alt="Ícone 2">
+                <p>Penicilina</p>
+            </a>
+        </div>
+    </div>
+    <div class="column">
+        <div class="box">
+            <a href="pagina4.html">
+                <img src="https://i.pinimg.com/564x/17/b9/3f/17b93f8b980f9c25e2d3fb6012a799b0.jpg" alt="Ícone 4">
+                <p>Gotejamento</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="pagina5.html">
+                <img src="https://i.pinimg.com/564x/71/f0/55/71f055b81867c3d8243d209c14a64a18.jpg" alt="Ícone 5">
+                <p>Benzetacil</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
