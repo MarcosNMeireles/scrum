@@ -58,3 +58,9 @@ p {
     margin: 10px 0;
     padding: 0;
 }
+@media (max-width: 768px) {
+    .header img, .box {
+        width: 80%; /* Para ajustar a largura da imagem e das caixas à largura da tela */
+        height: auto; /* Para manter a proporção da imagem */
+    }
+}
